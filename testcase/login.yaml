@@ -1,0 +1,37 @@
+
+login:
+  - name: 正确账号密码
+    url: /api/military-user-service/uc/login/login
+    headers:
+      content-type: application/json;charset=UTF-8
+    body:
+      username: admin
+      pwd: 123456
+      checkKey: 1629428467008
+      captcha: 1234
+    assert: 200
+
+  - name: 错误验证码
+    url: /api/military-user-service/uc/login/login
+    headers:
+      content-type: application/json;charset=UTF-8
+    body:
+      username: admin
+      pwd: 123456
+      checkKey: 1629428467008
+      captcha: 1234
+    assert: 500
+
+  - name: 错误密码
+    url: /api/military-user-service/uc/login/login
+    headers:
+      content-type: application/json;charset=UTF-8
+    body:
+      username: admin
+      pwd: 1234567
+      checkKey: 1629428467008
+      captcha: 1234
+    assert: 500
+
+
+
