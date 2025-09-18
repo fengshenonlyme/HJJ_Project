@@ -34,4 +34,20 @@ login:
     assert: 500
 
 
+garrison:
+  - name: 驻地查询
+    url: /api/online/ysOnlCgformHead/getCgformHeadAndSub?id=da8a0e68659744e1b94f3558547f7ac1&_t=1758180088205
+    assert: 200
+
+  - name: 驻地查询
+    url: /api/progress/getUserProgressByName?nameStr=residentInformationImport&_t=1758180088206
+    assert: 200
+
+  - name: 驻地查询
+    url: /api/resident/resident/pageList?column=createTime&order=desc&pageNo=1&pageSize=10&_t=1758180088239
+    assert: 200
+
+  - name: 驻地查询
+    url: /api/sys/rule/list?_t=1758180088285
+    assert: 200
 

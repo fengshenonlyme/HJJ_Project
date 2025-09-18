@@ -1,3 +1,4 @@
+import os
 import time
 
 import requests
@@ -7,7 +8,7 @@ import json
 import yaml
 
 
-class Pass:
+class GetToken:
     def __init__(self):
         self.config = configparser.ConfigParser()
         self.config.read('../config/config.ini')
@@ -34,7 +35,9 @@ class Pass:
         return token
 
     def read_yaml_basic(self):
-        with open('../config/token.yaml', 'r', encoding='utf-8') as file:
+        current_dir = os.path.dirname(os.path.abspath(__file__))
+        yaml_path = os.path.join(current_dir, '../config/token.yaml')
+        with open(yaml_path, 'r', encoding='utf-8') as file:
             data = yaml.safe_load(file)
         return data
 
@@ -68,4 +71,5 @@ class Pass:
 
 
 if __name__ == '__main__':
-    Pass().save_token()
+    x = GetToken().save_token()
+    print(x)

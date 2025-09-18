@@ -1,6 +1,7 @@
 import yaml
 import os
 import configparser
+from utils.get_token import GetToken
 
 
 def get_url():
@@ -21,7 +22,17 @@ def get_url():
 
 def read_yaml():
     current_dir = os.path.dirname(os.path.abspath(__file__))
-    yaml_path = os.path.join(current_dir, '../testcase/login.yaml')
+    yaml_path = os.path.join(current_dir, '../testcase/testcase.yaml')
+    with open(yaml_path, "r", encoding="utf-8") as f:
+        data = yaml.load(stream=f, Loader=yaml.FullLoader)
+        # print(data)
+        return data
+
+
+def read_token():
+    # GetToken().save_token()
+    current_dir = os.path.dirname(os.path.abspath(__file__))
+    yaml_path = os.path.join(current_dir, '../config/token.yaml')
     with open(yaml_path, "r", encoding="utf-8") as f:
         data = yaml.load(stream=f, Loader=yaml.FullLoader)
         # print(data)
@@ -29,5 +40,5 @@ def read_yaml():
 
 
 if __name__ == '__main__':
-    # read_yaml()
-    get_url()
+    t = read_token()
+    print(t)
