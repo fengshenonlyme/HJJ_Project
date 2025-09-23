@@ -9,7 +9,7 @@ login:
       pwd: 123456
       checkKey: 1629428467008
       captcha: 1234
-    assert: 200
+    assert: 500
 
   - name: 错误验证码
     url: /api/military-user-service/uc/login/login

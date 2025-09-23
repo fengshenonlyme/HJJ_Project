@@ -11,4 +11,4 @@ if __name__ == '__main__':
     #              "--alluredir", "./result"])
     # os.system("allure generate ./result -o ./report --clean")
     pytest.main()
-    os.system('allure serve ./report/temp')
+    os.system("allure generate ./result -o ./report --clean")

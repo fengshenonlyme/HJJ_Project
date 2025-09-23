@@ -1,6 +1,6 @@
 <component name="ProjectRunConfigurationManager">
   <configuration default="false" name="python3.13" type="PythonConfigurationType" factoryName="Python">
-    <module name="AR_UI_Test" />
+    <module name="HJJ-API-Test" />
     <option name="ENV_FILES" value="$PROJECT_DIR$/.venv" />
     <option name="INTERPRETER_OPTIONS" value="" />
     <option name="PARENT_ENVS" value="true" />
