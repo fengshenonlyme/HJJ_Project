@@ -1,0 +1,8 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","62","test_login[case0]","test_api","2025-09-23","passed","2025-09-23","TestLogin","test_login","",""
+"","63","test_login[case2]","test_api","2025-09-23","passed","2025-09-23","TestLogin","test_login","",""
+"","93","test_garrison[case2]","test_api","2025-09-23","passed","2025-09-23","TestGarrison","test_garrison","",""
+"","130","test_garrison[case0]","test_api","2025-09-23","passed","2025-09-23","TestGarrison","test_garrison","",""
+"","62","test_login[case1]","test_api","2025-09-23","passed","2025-09-23","TestLogin","test_login","",""
+"","67","test_garrison[case1]","test_api","2025-09-23","passed","2025-09-23","TestGarrison","test_garrison","",""
+"","68","test_garrison[case3]","test_api","2025-09-23","passed","2025-09-23","TestGarrison","test_garrison","",""
